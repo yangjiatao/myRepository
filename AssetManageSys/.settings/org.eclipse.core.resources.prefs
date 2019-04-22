@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+encoding//WebRoot/head.jsp=UTF-8
+encoding//WebRoot/js/js.js=UTF-8
+encoding//WebRoot/left.jsp=UTF-8
+encoding//WebRoot/main.jsp=UTF-8
+encoding//src/com/hp/action/UserAction.java=UTF-8
+encoding//src/org/tempuri/ReturnValue.java=UTF-8
+encoding//src/org/tempuri/User.java=UTF-8
+encoding//src/org/tempuri/UserInfo.java=UTF-8
+encoding//src/org/tempuri/UserLocator.java=UTF-8
+encoding//src/org/tempuri/UserSoap.java=UTF-8
+encoding//src/org/tempuri/UserSoapStub.java=UTF-8
+encoding//src/org/tempuri/holders/ReturnValueHolder.java=UTF-8
+encoding//src/org/tempuri/holders/UserInfoHolder.java=UTF-8

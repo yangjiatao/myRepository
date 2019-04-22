@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<include file="struts-default.xml" />
+	<package name="com.hp.action" extends="struts-default">
+		 <!--添加资产 -->
+		<action  name ="addAssetPre"  class ="com.hp.action.AssetAction" method="addAssetPre"> 
+               <result>addAssetInfor.jsp</result>
+        </action > 
+		
+		<action  name ="AddAsset"  class ="com.hp.action.AssetAction" method="AddAsset"> 
+               <result type="redirect">AssetListAll</result>
+               <result name="input">addAssetInfor.jsp</result>
+        </action > 
+        
+        <!-- 添加硬件 -->
+        <action  name ="addHardWarePre"  class ="com.hp.action.AssetAction" method="addHardWarePre"> 
+               <result>addHardwareInfor.jsp</result>
+        </action > 
+        
+        <action  name ="addHardWare"  class ="com.hp.action.AssetAction" method="addHardWare"> 
+               <result type="redirect">HardWareListAll</result>
+               <result name="input">addHardwareInfor.jsp</result>
+        </action > 
+        
+        <!-- 添加维护信息 -->
+        <action  name ="addFixedAssetsPre"  class ="com.hp.action.AssetAction" method="addFixedAssetsPre"> 
+               <result>addFixedAssetsInfor.jsp</result>
+        </action > 
+        
+        <action  name ="addFixedAssets"  class ="com.hp.action.AssetAction" method="addFixedAssets"> 
+               <result type="redirect">FixedAssetsListAll</result>
+               <result name="input">addFixedAssetsInfor.jsp</result>
+        </action > 
+        
+        <!-- 添加软件 -->
+        <action  name ="addSoftWarePre"  class ="com.hp.action.AssetAction" method="addSoftWarePre"> 
+               <result>addSoftwareInfor.jsp</result>
+        </action > 
+        
+        <action  name ="addSoftWare"  class ="com.hp.action.AssetAction" method="addSoftWare"> 
+               <result type="redirect">SoftWareListAll</result>
+               <result name="input">addSoftwareInfor.jsp</result>
+        </action > 
+        <!-- 添加用户 -->
+        <action  name ="addUserPre"  class ="com.hp.action.UserAction" method="addUserPre"> 
+               <result>addUser.jsp</result>
+        </action > 
+        <action  name ="addUser"  class ="com.hp.action.UserAction" method="addUser"> 
+               <result type="redirect">UserListAll</result>
+               <result name="input">addUser.jsp</result>
+        </action > 
+        <!-- 添加角色 -->
+        <action  name ="addRolePre"  class ="com.hp.action.RoleAction" method="addRolePre"> 
+               <result>addRole.jsp</result>
+        </action > 
+        
+         <action  name ="addRole"  class ="com.hp.action.RoleAction" method="addRole"> 
+               <result type="redirect">RoleListAll</result>
+               <result name="input">addRole.jsp</result>
+        </action > 
+         <action  name ="deleteRole"  class ="com.hp.action.RoleAction" method="deleteRole"> 
+               <result type="redirect" name="success">RoleListAll</result>
+                <result type="redirect"  name="input">RoleListAll</result>
+        </action > 
+        <action  name ="deleteFixedAssets"  class ="com.hp.action.AssetAction" method="deleteFixedAssets"> 
+              <result type="redirect">FixedAssetsListAll</result>
+        </action > 
+         <action  name ="deleteUser"  class ="com.hp.action.UserAction" method="deleteUser"> 
+               <result type="redirect">UserListAll</result>
+        </action > 
+        
+        <action  name ="deleteHardWare"  class ="com.hp.action.AssetAction" method="deleteHardWare"> 
+               <result type="redirect">HardWareListAll</result>
+        </action > 
+        
+        <action  name ="deleteSoftWare"  class ="com.hp.action.AssetAction" method="deleteSoftWare"> 
+               <result type="redirect">SoftWareListAll</result>
+        </action > 
+        
+        <action  name ="deleteAsset"  class ="com.hp.action.AssetAction" method="deleteAsset"> 
+               <result type="redirect">AssetListAll</result>
+        </action > 
+         <action  name ="modifyRolePre"  class ="com.hp.action.RoleAction" method="modifyRolePre"> 
+               <result>modifyRole.jsp</result>
+        </action > 
+         <action  name ="modifyRole"  class ="com.hp.action.RoleAction" method="modifyRole"> 
+               <result type="redirect">RoleListAll</result>
+        </action > 
+         <action  name ="modifyUserPre"  class ="com.hp.action.UserAction" method="modifyUserPre"> 
+               <result>modifyUser.jsp</result>
+        </action > 
+         <action  name ="modifyUser"  class ="com.hp.action.UserAction" method="modifyUser"> 
+               <result type="redirect">UserListAll</result>
+        </action > 
+        <action  name ="modifyFixedAssetsPre"  class ="com.hp.action.AssetAction" method="modifyFixedAssetsPre"> 
+               <result>modifyFixedAssets.jsp</result>
+        </action >
+         <action  name ="modifyFixedAssets"  class ="com.hp.action.AssetAction" method="modifyFixedAssets"> 
+                <result type="redirect">FixedAssetsListAll</result>
+        </action > 
+          <action  name ="modifyAssetPre"  class ="com.hp.action.AssetAction" method="modifyAssetPre"> 
+               <result>modifyAssetInfor.jsp</result>
+        </action > 
+         <action  name ="modifyAsset"  class ="com.hp.action.AssetAction" method="modifyAsset"> 
+               <result type="redirect">AssetListAll</result>
+        </action > 
+          <action  name ="modifySoftWarePre"  class ="com.hp.action.AssetAction" method="modifySoftWarePre"> 
+               <result>modifySoftwareInfor.jsp</result>
+        </action > 
+         <action  name ="modifySoftWare"  class ="com.hp.action.AssetAction" method="modifySoftWare"> 
+               <result type="redirect">SoftWareListAll</result>
+        </action > 
+         <action  name ="modifyHardWarePre"  class ="com.hp.action.AssetAction" method="modifyHardWarePre"> 
+               <result>modifyHardwareInfor.jsp</result>
+        </action > 
+         <action  name ="modifyHardWare"  class ="com.hp.action.AssetAction" method="modifyHardWare"> 
+               <result type="redirect">HardWareListAll</result>
+        </action > 
+         <action  name ="RoleListAll"  class ="com.hp.action.RoleAction" method="RoleListAll"> 
+               <result>roleAllList.jsp</result>
+               <result type="redirect" name="error">RoleListAll</result>
+        </action > 
+        <action  name ="HardWareListAll"  class ="com.hp.action.AssetAction" method="HardWareListAll"> 
+               <result>hardwareAllList.jsp</result>
+        </action > 
+        <action  name ="FixedAssetsListAll"  class ="com.hp.action.AssetAction" method="FixedAssetsListAll"> 
+               <result>FixedAssetsListAll.jsp</result>
+        </action > 
+        <action  name ="UserListAll"  class ="com.hp.action.UserAction" method="UserListAll"> 
+               <result>userAllList.jsp</result>
+        </action > 
+        <action  name ="SoftWareListAll"  class ="com.hp.action.AssetAction" method="SoftWareListAll"> 
+               <result>softwareAllList.jsp</result>
+        </action >
+        <action  name ="AssetListAll"  class ="com.hp.action.AssetAction" method="AssetListAll"> 
+               <result>AssetInforList.jsp</result>
+        </action > 
+		<action name ="login" class ="com.hp.action.UserAction" method="login"> 
+            <result name ="success" >main.jsp</result > 
+            <result name="input">login.jsp</result>
+        </action >
+        <action name ="logout" class ="com.hp.action.UserAction" method="logout"> 
+            <result name ="success" >login.jsp</result > 
+            <result name="error">index.jsp</result>
+        </action >
+        </package>
+</struts>    
